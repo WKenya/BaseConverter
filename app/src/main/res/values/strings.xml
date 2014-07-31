@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HexDecConverter</string>
+    <string name="action_settings">Settings</string>
+    <string name="convert_button">Convert</string>
+    <string name="decimal_text">Enter a number.</string>
+    <string name="stringDecimal">Decimal</string>
+    <string name="stringHexadecimal">Hexadecimal</string>
+    <string name="stringBinary">Binary</string>
+    <string name="developerName">Created by Wesley Kenyon</string>
+    <string name="textDefault">Click Here</string>
+    <string name="clearButtonText">Clear</string>
+
+</resources>
