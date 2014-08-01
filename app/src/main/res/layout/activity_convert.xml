@@ -10,11 +10,15 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp">
 
-        <Space
-            android:layout_width="20px"
-            android:layout_height="115dp" />
+        <ImageView
+            android:layout_width="98dp"
+            android:layout_height="98dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/ic_launcher" />
     </LinearLayout>
 
     <TextView
@@ -25,14 +29,13 @@
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         android:layout_gravity="center_horizontal"
-        android:editable="false"
         android:padding="5dp" />
 
     <EditText
         android:id="@+id/hexEditText"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:background="#FFFFFF"
+        android:background="@drawable/rounded"
         android:digits="0123456789ABCDEF"
         android:ems="10"
         android:hint="@string/textDefault"
@@ -57,13 +60,12 @@
         android:id="@+id/decimalEditText"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:background="#FFFFFF"
+        android:background="@drawable/rounded"
         android:ems="10"
         android:hint="@string/textDefault"
         android:imeOptions="actionDone"
         android:inputType="numberSigned"
         android:textColor="#000000"
-        android:text="@string/textDefault"
         android:digits="0123456789"
         android:padding="5dp"
         android:layout_gravity="center" />
@@ -82,7 +84,7 @@
         android:id="@+id/binaryEditText"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:background="#FFFFFF"
+        android:background="@drawable/rounded"
         android:digits="01"
         android:ems="10"
         android:hint="@string/textDefault"
@@ -104,22 +106,15 @@
         android:padding="15dp" />
 
     <Space
-        android:layout_width="20px"
+        android:layout_width="20dp"
         android:layout_height="150dp" />
 
-    <LinearLayout
-        android:orientation="vertical"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|left">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="@string/developerName"
-            android:id="@+id/textView"
-            android:layout_gravity="bottom" />
-    </LinearLayout>
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/developerName"
+        android:id="@+id/textView"
+        android:textColor="#59000000" />
 
 </LinearLayout>
